@@ -13,11 +13,11 @@
         }
 
         function moverBotonNo() {
-            width = window.innerWidth;
-            height = window.innerHeight;
+            const width = window.visualViewport.width - 54;
+            const height = window.visualViewport.height - 48;
 
-            newWidth = (Math.random() * width);
-            newHeight = (Math.random() * height);
+            const newWidth = (Math.random() * width);
+            const newHeight = (Math.random() * height);
 
             document.getElementById('botonNo').style.position = "absolute";
             document.getElementById('botonNo').style.left = newWidth + "px";
