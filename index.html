@@ -12,6 +12,10 @@
             alert('Ahora seamos dos chicles pegados. Te quiero');
         }
 
+        function redirect() {
+            window.location.href = "mensaje.html";
+        }
+
         function moverBotonNo() {
             const width = window.visualViewport.width - 54;
             const height = window.visualViewport.height - 48;
@@ -37,7 +41,7 @@
         </div>
 
         <div>
-            <input class="button button-30" type="button" onclick="cuandoDigaQueSi()" id="botonSi" value="Si" />
+            <input class="button button-30" type="button" onclick="redirect()" id="botonSi" value="Si" />
             <input class="button button-30" type="button" id="botonNo" onmouseover="moverBotonNo()" value="No" />
         </div>
 
