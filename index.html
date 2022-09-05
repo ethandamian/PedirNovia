@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mi novia</title>
+    <meta name='viewport' conten='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="./styles/novia.css">
+    <script>
+        function cuandoDigaQueSi() {
+            alert('Ahora seamos dos chicles pegados. Te quiero');
+        }
+
+        function moverBotonNo() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('botonNo').style.position = "absolute";
+            document.getElementById('botonNo').style.left = newWidth + "px";
+            document.getElementById('botonNo').style.top = newHeight + "px";
+
+
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <section class="main">
+        <div>
+            <h3 class="title">¿Quieres noviar conmigo?</h3>
+        </div>
+
+        <div>
+            <input class="button button-30" type="button" onclick="cuandoDigaQueSi()" id="botonSi" value="Si" />
+            <input class="button button-30" type="button" id="botonNo" onmouseover="moverBotonNo()" value="No" />
+        </div>
+
+        <img class="my-image" src="kilua.png" width="200">
+
+
+
+    </section>
+
+</body>
+
+</html>
